@@ -1,0 +1,27 @@
+{
+  "name": "sherlockholmes",
+  "version": "1.0.0",
+  "description": "The crime solving mystery event for college event of MIET Sammailan 2K18",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gulzarsuhail/MIETSherlockHolmes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gulzarsuhail/MIETSherlockHolmes/issues"
+  },
+  "homepage": "https://github.com/gulzarsuhail/MIETSherlockHolmes#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-sanitizer": "^1.0.3",
+    "fs": "0.0.1-security"
+  }
+}

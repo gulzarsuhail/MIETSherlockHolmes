@@ -1,0 +1,43 @@
+<% include ./partials/header %>
+
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/into.css">
+
+    <script type="text/javascript" src="/javascripts/typed.min.js"></script>
+    <div class="container">
+        <div class="eventTag mainEventTag">Sammailan 2K18</div>
+        <hr>
+        <div class="eventTag secondaryEventTag">Sherlock Holmes</div>
+
+        <div id="textBoxContainer">
+            <span id="textBox"></span>
+        </div>
+        <br>
+        <br>
+        <div class="center">
+            <!-- if (pageDetails.eventBegin){ -->
+            <div id="theFormDiv" class="smallForm">
+                <form id="form">
+                    <input type="text" maxlength="32" name="token" pattern="[a-zA-Z][a-zA-Z0-9]*" placeholder="login key" required title="Enter key to participate">
+                    <div class="error">This error has happened</div>
+                    <br>
+                    <div class="center">
+                        <button type="submit" class="activeButton btn">ENTER</button>
+                    </div>
+                </form>
+            </div>
+            <!-- } else { -->
+            <!-- <a href="/participate">
+                <span class="activeButton btn">PARTICIPATE</span>
+            </a> -->
+            <!-- } -->
+        </div>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="/javascripts/intro.js"></script>
+    <!-- if (pageDetails.eventBegin){ -->
+    <script type="text/javascript" src="/javascripts/introEventStart.js"></script>
+    <!-- } -->
+
+    <% include ./partials/footer %>

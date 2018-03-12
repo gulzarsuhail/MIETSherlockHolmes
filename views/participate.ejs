@@ -1,0 +1,43 @@
+<% include ./partials/header %>
+
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/participate.css">
+
+    <div class="container">
+        <div class="spacer"></div>
+        <br>
+        <a href="/"><div class="eventTag primaryHead">Sherlock Holmes</div></a>
+        <br>
+        <hr>
+        <br>
+        <p class="pageText">Enter the following details to participate</p>
+        <div id="theFormDiv" class="smallForm">
+            <form id="form">
+                <input type="text" maxlength="32" name="name" pattern="[a-zA-Z][a-zA-Z0-9\s]*" placeholder="full name" required title="Enter a valid name">
+                <input type="text" id="email" name="email" placeholder="email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    required title="Email is not valid">
+                <input type="text" maxlength="10" minlength="10" pattern="[0-9]{10,10}" id="phone" required title="Enter a valid phone number"
+                    name="phone" placeholder="phone number">
+                <br>
+                <div class="error">This error has happened</div>
+                <br>
+                <div class="center">
+                    <button type="submit" class="activeButton">CONTACT ME</button>
+                </div>
+            </form>
+            <br>
+        </div>
+        <div id="successSpan">
+            <div class="successText">You've successfully registered for Sherlock Holmes.</div>
+            <div class="successText">You will be contacted soon to complete registration.</div>
+            <br>
+            <div class="center">
+                <a href="/"><button class="activeButton">GO HOME</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/javascripts/participate.js"></script>
+
+
+    <% include ./partials/footer %>

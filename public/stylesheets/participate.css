@@ -1,0 +1,98 @@
+
+button{
+    font-size: 2em;
+    margin: 0 auto;
+    padding: 0.3em 1em 0.3em 1em;
+    transition: all 0.5s ease-out;
+    letter-spacing: 0.1em;
+}
+
+.activeButton{
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+}
+
+.activeButton:hover{
+    background-color: white;
+    color: #000;
+}
+
+.disableButton{
+    color: #777;
+    background-color: rgba(100, 100, 100, 0.5);
+    border: 1px solid #777;
+}
+
+.center{
+    width: 100%;
+    text-align: center;
+}
+
+.primaryHead{
+    font-size: 4em;
+}
+
+hr{
+    width: 350px;
+    border: 1px solid white;
+}
+
+.spacer{
+    height: 50px;
+}
+
+input{
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    height: 40px;
+    margin: 0.5em 0 0.5em 0;
+    padding: 0.1em 0.5em 0.1em 0.5em;
+    border: 1px solid white;
+    font-size: 1.1em;
+    transition: all 0.25s ease-out;
+    font-family: 'Slabo 27px', serif;
+    letter-spacing: 0.1em;
+    box-sizing : border-box;
+
+}
+
+input:focus{
+    background-color: white;
+    color: black;
+}
+
+.smallForm{
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.error{
+    background: rgba(223, 6, 6, 0.8);
+    color: white;
+    width: 85%;
+    transition: all 0.5s ease-out;
+    padding: 0.5em;
+    margin: 0.5em auto;
+    display: none;
+}
+
+.successText{
+    font-size: 2em;
+    color: white;
+}
+
+#successSpan{
+    width: 100%;
+    text-align: center;
+    margin-top: 70px;
+    display: none;
+}
+
+.pageText{
+    text-align: center;
+    display: block;
+    font-size: 1.5em;
+}
