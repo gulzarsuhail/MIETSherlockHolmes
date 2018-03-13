@@ -7,6 +7,7 @@ function startTyped() {
     });
 }
 
-$(document).ready(function () {
+// start typed on load
+$(window).on("load", function() {
     startTyped();
-})
+});

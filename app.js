@@ -23,24 +23,8 @@ app.use(expressSanitizer());
 // use compression
 app.use(compression());
 
-// route the intro page
-app.get("/", (req, res) => {
-    midIndex.renderWithParams(req, res, "Welcome Sherlock Holmes", "intro")
-});
-
-// check if token is valid
-app.post("/", midIndex.checkToken);
-
-// route the participate
-app.get("/participate", (req, res) => {
-    midIndex.renderWithParams(req, res, "Participate - Shelock Holmes", "participate")
-});
-
-// route for participate post
-app.post("/participate", midIndex.newParticipation);
-
-// a participant got the key, give him/her clues
-app.get("/key/longlivetheking", midIndex.sendCluePage);
+// use the routes
+app.use("/", require("./routes"));
 
 // TEST LISTENER FOR LOCALHOST, DOES NOT NEED SUDO
 app.listen(9001, function () {

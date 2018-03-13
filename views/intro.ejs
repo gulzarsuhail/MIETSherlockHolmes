@@ -15,7 +15,7 @@
         <br>
         <br>
         <div class="center">
-            <!-- if (pageDetails.eventBegin){ -->
+            <% if (pageDetails.eventBegin){ %>
             <div id="theFormDiv" class="smallForm">
                 <form id="form">
                     <input type="text" maxlength="32" name="token" pattern="[a-zA-Z][a-zA-Z0-9]*" placeholder="login key" required title="Enter key to participate">
@@ -26,11 +26,11 @@
                     </div>
                 </form>
             </div>
-            <!-- } else { -->
-            <!-- <a href="/participate">
+            <% } else { %>
+            <a href="/participate">
                 <span class="activeButton btn">PARTICIPATE</span>
-            </a> -->
-            <!-- } -->
+            </a>
+            <% } %>
         </div>
     </div>
     </div>

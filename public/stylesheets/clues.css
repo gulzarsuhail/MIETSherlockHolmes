@@ -1,0 +1,60 @@
+
+button{
+    font-size: 2em;
+    margin: 0 auto;
+    padding: 0.3em 1em 0.3em 1em;
+    transition: all 0.5s ease-out;
+    letter-spacing: 0.1em;
+}
+
+.activeButton{
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+}
+
+.activeButton:hover{
+    background-color: white;
+    color: #000;
+}
+
+.disableButton{
+    color: #777;
+    background-color: rgba(100, 100, 100, 0.5);
+    border: 1px solid #777;
+}
+
+.center{
+    width: 100%;
+    text-align: center;
+}
+
+.primaryHead{
+    font-size: 4em;
+}
+
+hr{
+    width: 350px;
+    border: 1px solid white;
+}
+
+.spacer{
+    height: 3em;
+}
+
+.pageTextLeft{
+    text-align: left;
+    display: block;
+    font-size: 1.5em;
+}
+
+.info{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.clue {
+    max-width: 550px;
+    border: 1px white solid;
+    
+}
