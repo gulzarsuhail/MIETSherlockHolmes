@@ -8,25 +8,20 @@ button{
 }
 
 .activeButton{
-    color: rgba(0, 0, 0, 0);
+    color: rgb(101, 110, 238);
     background-color: rgba(0, 0, 0, 0);
-    border: 1px solid white;
+    border: 1px solid rgb(101, 110, 238);
 }
 
 .activeButton:hover{
-    background-color: white;
-    color: #000;
+    background-color: rgb(76, 82, 170);
+    color: white;;
 }
 
 .disableButton{
     color: #777;
     background-color: rgba(100, 100, 100, 0.5);
     border: 1px solid #777;
-}
-
-.center{
-    width: 100%;
-    text-align: center;
 }
 
 .primaryHead{

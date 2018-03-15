@@ -6,7 +6,8 @@ var stream = fs.createWriteStream(__dirname + '/../participants.txt', { flags: '
 var extData = require("./phonedata");
 
 // set UNIX timestamp for the event in miliseconds
-var eventTime = new Date("2018-03-16 22:00:00.0");
+// var eventTime = new Date("2018-03-16 22:00:00.0");
+var eventTime = 0;
 // set a event token here
 var gameToken = "imgoingin";
 // set phone pin here
