@@ -61,7 +61,7 @@ module.exports = {
         if (!module.exports.checkEventBeginBoolean()) {
             return res.json({ success: false, error: "It's not the time yet." });
         } else {
-            if (req.body.token === gameToken) {
+            if (req.body.token == gameToken) {
                 return res.json({ success: true, url: "/key/" + gameToken });
             } else {
                 return res.json({ success: false, error: "No Sherlock, this is not the key." });

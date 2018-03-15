@@ -106,7 +106,7 @@ function drawOneMessage() {
             newPhoneContent = newPhoneContent + 'Recieved';
         else
             newPhoneContent = newPhoneContent + 'Sent';
-        newPhoneContent = newPhoneContent + messages[activeMessage].text[x].date + '</div></div>';
+        newPhoneContent = newPhoneContent + messages[activeMessage].text[x].date + '</div></div><br>';
     }
     $('#content').html(newPhoneContent);
 }
@@ -120,7 +120,7 @@ function drawMessageApp() {
         if (x === activeMessage) {
             newPhoneContent = newPhoneContent + 'screenItemActive '
         }
-        newPhoneContent = newPhoneContent + '"> <div class="contact">' + messages[x].from + '</div></div>';
+        newPhoneContent = newPhoneContent + '"> <div class="contact">' + messages[x].from + '</div></div><br>';
     };
     $('#content').html(newPhoneContent);
     //scroll to active log
@@ -166,7 +166,7 @@ function openOneNote() {
 // draws a single note
 function drawOneNote() {
     $('#content').html('');
-    var newPhoneContent = '<div class="time">' + notes[activeNoteItem].date + '</div><div class="onenote">' + notes[activeNoteItem].note + '</div>';
+    var newPhoneContent = '<div class="time">' + notes[activeNoteItem].date + '</div><div class="onenote">' + notes[activeNoteItem].note + '</div><br>';
     $('#content').html(newPhoneContent);
 }
 
@@ -179,7 +179,7 @@ function drawNotes() {
         if (x === activeNoteItem) {
             newPhoneContent = newPhoneContent + 'screenItemActive '
         }
-        newPhoneContent = newPhoneContent + '"><div class="time">' + notes[x].date + '</div><div class="noteText">' + notes[x].note.slice(0, 30) + '...' + '</div></div>';
+        newPhoneContent = newPhoneContent + '"><div class="time">' + notes[x].date + '</div><div class="noteText">' + notes[x].note.slice(0, 30) + '...' + '</div></div><br>';
     };
     $('#content').html(newPhoneContent);
     //scroll to active log
@@ -218,7 +218,7 @@ function drawPhone() {
         if (x === activePhoneItem) {
             newPhoneContent = newPhoneContent + 'screenItemActive '
         }
-        newPhoneContent = newPhoneContent + phoneLogs[x].type + '"> <div class="contact">' + phoneLogs[x].name + '</div><div class="details"><span class="time">' + phoneLogs[x].time + '</span></div></div>';
+        newPhoneContent = newPhoneContent + phoneLogs[x].type + '"> <div class="contact">' + phoneLogs[x].name + '</div><div class="details"><span class="time">' + phoneLogs[x].time + '</span></div></div><br>';
     };
     $('#content').html(newPhoneContent);
     //scroll to active log
