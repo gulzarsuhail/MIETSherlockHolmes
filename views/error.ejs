@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>GNOSIS: Error</title>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Slabo+27px" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/universal.css">
+</head>
+
+<body>
+    <link href="/stylesheets/error.css" rel="stylesheet">
+    <div class="errorBox">
+        <h2 class="white">
+            <% if( pageDetails.otherProps.error && pageDetails.otherProps.error.length > 0) { %>
+                <%=pageDetails.otherProps.error %>
+                    <% } else {%>
+                        Internal error has occured, please try again later
+                        <%}%>
+        </h2>
+        <br>
+        <a href="/">
+            <h3 class="white">Click here to go home</h3>
+        </a>
+    </div>
+</body>
+
+</html>

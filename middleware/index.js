@@ -6,7 +6,7 @@ var stream = fs.createWriteStream(__dirname + '/../participants.txt', { flags: '
 var extData = require("./phonedata");
 
 // set UNIX timestamp for the event in miliseconds
-var eventTime = new Date("2018-03-16 03:23:00.0");
+var eventTime = new Date("2018-03-16 22:00:00.0");
 // set a event token here
 var gameToken = "imgoingin";
 // set phone pin here
@@ -78,7 +78,7 @@ module.exports = {
     checkIfEventStarted: function (req, res, next) {
         // check if event is active
         if (!module.exports.checkEventBeginBoolean()) {
-            return module.exports.renderWithParams(req, res, "To Soon", "error", { error1: "Its too soon to be here yet.", error2: "How did you end up here?" });
+            return module.exports.renderWithParams(req, res, "To Soon", "error", { error: "Its too soon to be here yet."});
         } else {
             next();
         }
@@ -91,7 +91,7 @@ module.exports = {
         if (req.params.key === gameToken) {
             next();
         } else {
-            return module.exports.renderWithParams(req, res, "Invalid Key", "error", { error1: "Invalid key used.", error2: "How did you end up here?" });
+            return module.exports.renderWithParams(req, res, "Invalid Key", "error", { error: "Invalid key used. <br>How did you end up here>" });
         }
     },
 

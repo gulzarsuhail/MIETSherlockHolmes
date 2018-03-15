@@ -36,8 +36,8 @@
     </div>
 
     <script type="text/javascript" src="/javascripts/intro.js"></script>
-    <!-- if (pageDetails.eventBegin){ -->
-    <script type="text/javascript" src="/javascripts/introEventStart.js"></script>
-    <!-- } -->
+    <% if (pageDetails.eventBegin){ %>
+        <script type="text/javascript" src="/javascripts/introEventStart.js"></script>
+        <% } %>
 
     <% include ./partials/footer %>
