@@ -16,26 +16,6 @@
     font-size: 1.2em;
 }
 
-/* width */
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: rgba(87, 87, 87, 0.315); 
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.719);
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 38, 255, 0.315); 
-}
-
 .typed-cursor {
     opacity: 0;
 }

@@ -3,14 +3,14 @@ var fs = require('fs');
 // text file stream to save data to
 var stream = fs.createWriteStream(__dirname + '/../participants.txt', { flags: 'a' });
 
+var extData = require("./phonedata");
+
 // set UNIX timestamp for the event in miliseconds
-// var eventTime = 1521167400000;
-var eventTime = 0;
+var eventTime = new Date("2018-03-16 03:23:00.0");
 // set a event token here
-var gameToken = "apple";
+var gameToken = "imgoingin";
 // set phone pin here
-// var phonePIN = 14031997;
-var phonePIN = 111;
+var phonePIN = 14031997;
 // export this object as index module
 module.exports = {
 
@@ -115,7 +115,13 @@ module.exports = {
         // sanitize the pin
         req.body.pin = req.sanitize(req.body.pin);
         if (req.body.pin == phonePIN) {
-            return res.json({ success: true });
+            var data = {
+                success: true,
+                messages: extData.messages,
+                phoneLogs: extData.phoneLogs,
+                notes: extData.notes
+            }
+            return res.json(data);
         } else {
             return res.json({ success: false, error: "Incorrect PIN" });
         }

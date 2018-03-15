@@ -27,6 +27,6 @@ app.use(compression());
 app.use("/", require("./routes"));
 
 // TEST LISTENER FOR LOCALHOST, DOES NOT NEED SUDO
-app.listen(9001, function () {
+app.listen(9002, function () {
     console.log("Let the games begin...");
 });

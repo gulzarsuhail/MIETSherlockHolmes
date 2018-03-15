@@ -27,9 +27,14 @@
     height: 300px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    background-color: rgb(20, 20, 20);
+    /* background-color: rgb(20, 20, 20); */
     padding-top: 5px;
     font-family: 'Roboto', sans-serif;
+    background: rgb(25,25,25); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(25,25,25,1) 0%, rgba(25,25,25,1) 96%, rgba(117,117,117,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(25,25,25,1) 0%,rgba(25,25,25,1) 96%,rgba(117,117,117,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(25,25,25,1) 0%,rgba(25,25,25,1) 96%,rgba(117,117,117,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191919', endColorstr='#757575',GradientType=0 ); /* IE6-9 */
 }
 
 #speakerGrill{
@@ -190,15 +195,15 @@ td:active{
 }
 
 .missed {
-    color: red;
+    color: rgb(255, 104, 104);
 }
 
 .dialed {
-    color: green;
+    color: rgb(107, 255, 107);
 }
 
 .picked {
-    color: rgb(101, 110, 238);
+    color: rgb(127, 104, 255);
 }
 
 .screenItemActive {
@@ -212,4 +217,32 @@ td:active{
 
 .noteText {
     padding: 5px;
+}
+
+.onenote {
+    color: white;
+    width: 100%;
+    padding: 5px;
+    overflow: scroll;
+}
+
+.sent {
+    background-color: rgba(41, 243, 0, 0.356);
+}
+
+
+.recieved {
+    background-color: rgba(0, 45, 243, 0.712);
+}
+
+.message{
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.messageTime{
+    font-size: 0.7em;
+    color: #AAA;
 }
