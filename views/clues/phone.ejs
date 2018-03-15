@@ -1,0 +1,53 @@
+<% include ../partials/header %>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/into.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/phone.css">
+    <script type="text/javascript">
+        var key = '<%= pageDetails.otherProps.key %>';
+    </script>
+    <div class="container">
+        <div class="eventTag mainEventTag">Sherlock Holmes</div>
+        <hr>
+        <div class="eventTag secondaryEventTag">Phone</div>
+        <div class="phone">
+            <div id="speakerGrill">&nbsp;</div>
+            <div id="screen">
+                <div id="topbar">
+                    <span class="airplane">Airplane mode</span>
+                    <span class="battery">10%</span>
+                </div>
+                <div id="errorBar">
+                    <div id="error">Invalid Pin</div>
+                </div>
+                <div id="content">
+                    <br>
+                    <br>
+                    <input id="pinBox" type="text" placeholder="enter password">
+                </div>
+            </div>
+            <div id="buttons">
+                <table>
+                    <tr>
+                        <td id="ok">OK</td>
+                        <td id="up">UP</td>
+                        <td id="back">BACK</td>
+                    </tr>
+                    <tr>
+                        <td id="phone">PHONE</td>
+                        <td id="down">DOWN</td>
+                        <td id="home">HOME</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="centered">
+            <a href="/key/<%= pageDetails.otherProps.key %>/showClues">
+                <span class="activeButton btn">GO BACK</span>
+            </a>
+        </div>
+        <br>
+        <br>
+    </div>
+    <script type="text/javascript" src="/javascripts/phone.js"></script>
+    <% include ../partials/footer %>

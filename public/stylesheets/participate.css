@@ -8,7 +8,7 @@ button{
 }
 
 .activeButton{
-    color: white;
+    color: rgba(0, 0, 0, 0);
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid white;
 }

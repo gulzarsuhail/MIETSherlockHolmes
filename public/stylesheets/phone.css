@@ -1,0 +1,215 @@
+.btn{
+    font-size: 2em;
+    margin: 0 auto;
+    padding: 0.3em 1em 0.3em 1em;
+    transition: all 0.5s ease-out;
+    letter-spacing: 0.1em;
+}
+
+.activeButton{
+    color: rgb(101, 110, 238);
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(101, 110, 238);
+}
+
+.activeButton:hover{
+    background-color: rgb(76, 82, 170);
+    color: white;;
+}
+
+.centered{
+    text-align: center;
+}
+
+.phone {
+    margin: 20px auto;
+    max-width: 300px;
+    height: 300px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: rgb(20, 20, 20);
+    padding-top: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#speakerGrill{
+    width: 100px;
+    height: 1%;
+    background-color: gray;
+    margin: 2% auto;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+#screen {
+    width: 90%;
+    background: white;
+    height: 60%;
+    border-radius: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#buttons{
+    width: 100%;
+    height: 30%;
+    margin: 10px auto;
+    border-color: white;
+}
+
+table{
+    width: 90%;
+    height: 98%;
+    margin: 0 auto;
+}
+
+td {
+    text-align: center;
+    background-color: white;
+    margin: 0px;
+    cursor: pointer;
+    background: rgb(193,193,193); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(193,193,193,1) 0%, rgba(226,226,226,1) 20%, rgba(242,242,242,1) 54%, rgba(226,226,226,1) 80%, rgba(193,193,193,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(193,193,193,1) 0%,rgba(226,226,226,1) 20%,rgba(242,242,242,1) 54%,rgba(226,226,226,1) 80%,rgba(193,193,193,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(193,193,193,1) 0%,rgba(226,226,226,1) 20%,rgba(242,242,242,1) 54%,rgba(226,226,226,1) 80%,rgba(193,193,193,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1c1c1', endColorstr='#c1c1c1',GradientType=0 ); /* IE6-9 */
+    color: black;
+}
+
+td:active{
+    color: black;
+    background: rgb(193,193,193); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(193,193,193,1) 0%, rgba(181,181,181,1) 20%, rgba(181,181,181,1) 20%, rgba(173,173,173,1) 54%, rgba(181,181,181,1) 80%, rgba(193,193,193,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(193,193,193,1) 0%,rgba(181,181,181,1) 20%,rgba(181,181,181,1) 20%,rgba(173,173,173,1) 54%,rgba(181,181,181,1) 80%,rgba(193,193,193,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(193,193,193,1) 0%,rgba(181,181,181,1) 20%,rgba(181,181,181,1) 20%,rgba(173,173,173,1) 54%,rgba(181,181,181,1) 80%,rgba(193,193,193,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1c1c1', endColorstr='#c1c1c1',GradientType=0 ); /* IE6-9 */
+}
+
+#ok{
+    border-top-left-radius: 10px;
+}
+
+#phone{
+    border-bottom-left-radius: 10px;
+    color: rgb(0, 216, 18)
+}
+
+#back{
+    border-top-right-radius: 10px;
+}
+
+#home{
+    border-bottom-right-radius: 10px;
+    color: red;
+}
+
+#topbar{
+    color: white;
+    font-size: 1em;
+    width: 100%;
+    padding: 2px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.airplane{
+    padding-left: 10px;
+    float: left;
+}
+
+.battery{
+    padding-right: 10px;
+    float: right;
+}
+
+#content {
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.menuEntry {
+    width: 100%;
+    font-size: 1.5em;
+    padding: 10px;
+    padding: 5px;
+}
+
+.activeMenu {
+    background-color: rgba(255, 255, 255, 0.822);
+    color: black;
+}
+
+#pinBox {
+    /* margin-top: 30%; */
+    width: 70%;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 0, 0, 0.596);
+    margin:  0 auto;
+    display: block;
+    margin-top: 25px;
+}
+
+#pinBox:focus{
+    background-color: white;
+    color: black;
+}
+
+#phoneBtn:active{
+    background-color: #222;
+}
+
+#errorBar {
+    background-color: rgba(226, 10, 10, 0.795);
+    color: white;
+    transition: all 0.3s ease-out;
+    height: 0%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#error{
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.phoneItem {
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.time{
+    font-size: 0.8em;
+    text-align: right;
+}
+
+.missed {
+    color: red;
+}
+
+.dialed {
+    color: green;
+}
+
+.picked {
+    color: rgb(101, 110, 238);
+}
+
+.screenItemActive {
+    background-color: rgba(255, 255, 255, 0.822);
+    color: black;
+}
+
+.note {
+    margin-bottom: 10px;
+}
+
+.noteText {
+    padding: 5px;
+}

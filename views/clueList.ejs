@@ -13,14 +13,32 @@
         <hr>
         <br>
         <div class="info">
-            <p class="pageTextLeft">Here are the clues Sherlock,</p>
-            <div class="clue">
-                asdada
+            <div class="center clue">
+                <div class="clueName">Victim's Diarie</div>
+                <div class="clueSummary">We found a dairy in the appartment of the victim. The dairy was burnt but the forensics were able to recover
+                    a few of the last pages. Though it seems the victim was too paranoid about his privacy and has wrote in some unreadable form.</div>
+                <a href="/key/<%= pageDetails.otherProps.key %>/showClues/diarie">
+                    <button class="activeButton">DIARIE</button>
+                </a>
             </div>
-
+            <div class="center clue">
+                <div class="clueName">Victim's Phone</div>
+                <div class="clueSummary">The victim's phone was left his appartment for some reason. It's protected by a pin and the forensics were not able to bypass the lock
+                    screen.
+                </div>
+                <a href="/key/<%= pageDetails.otherProps.key %>/showClues/phone"">
+                    <button class="activeButton">PHONE</button>
+                </a>
+            </div>
+            <div class="center clue">
+                <div class="clueName">Victim's Book</div>
+                <div class="clueSummary">The victim does not seem to have been a book worm. Though weiredly enough, we found a book on his desk. Our officers though as incapable as they are lost the book. Though we did find a copy of the book online.</div>
+                <a href="http://www.planetpdf.com/planetpdf/pdfs/free_ebooks/The_Time_Machine_NT.pdf" target="_blank">
+                    <button class="activeButton">THE TIME MACHINE</button>
+                </a>
+            </div>
         </div>
-
-        <!-- <script type="text/javascript" src="/javascripts/participate.js"></script> -->
-
+        <br>
+        <br>
 
         <% include ./partials/footer %>

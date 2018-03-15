@@ -1,0 +1,43 @@
+.entry{
+    max-width: 600px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.79);
+    color: black;
+    margin: 10px auto;
+}
+
+.date{
+    font-weight: 700;
+    font-size: 2em;
+    text-align: right;
+}
+
+.content{
+    text-align: justify;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+
+.btn{
+    font-size: 2em;
+    margin: 0 auto;
+    padding: 0.3em 1em 0.3em 1em;
+    transition: all 0.5s ease-out;
+    letter-spacing: 0.1em;
+}
+
+.activeButton{
+    color: rgb(101, 110, 238);
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(101, 110, 238);
+}
+
+.activeButton:hover{
+    background-color: rgb(76, 82, 170);
+    color: white;;
+}
+
+.centered{
+    text-align: center;
+}

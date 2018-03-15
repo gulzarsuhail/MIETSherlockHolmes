@@ -8,7 +8,9 @@ var stream = fs.createWriteStream(__dirname + '/../participants.txt', { flags: '
 var eventTime = 0;
 // set a event token here
 var gameToken = "apple";
-
+// set phone pin here
+// var phonePIN = 14031997;
+var phonePIN = 111;
 // export this object as index module
 module.exports = {
 
@@ -59,7 +61,7 @@ module.exports = {
             return res.json({ success: false, error: "It's not the time yet." });
         } else {
             if (req.body.token === gameToken) {
-                return res.json({ success: true, url: "/key/"+gameToken });
+                return res.json({ success: true, url: "/key/" + gameToken });
             } else {
                 return res.json({ success: false, error: "No Sherlock, this is not the key." });
             }
@@ -69,7 +71,7 @@ module.exports = {
     // sends the clue page
     sendEventStart: function (req, res) {
         req.params.key = req.sanitize(req.params.key);
-        return module.exports.renderWithParams(req, res, "Clues", "eventStart", {key: req.params.key});
+        return module.exports.renderWithParams(req, res, "Clues", "eventStart", { key: req.params.key });
     },
 
     // check if event has started, if not render error page
@@ -94,7 +96,28 @@ module.exports = {
     },
 
     // send the clue page
-    sendCluePage: function(req, res){
-        return module.exports.renderWithParams(req, res, "The Clues", "clueList");
+    sendCluePage: function (req, res) {
+        return module.exports.renderWithParams(req, res, "The Clues", "clueList", { key: req.params.key });
+    },
+
+    // send the diary clue
+    sendDiarie: function (req, res) {
+        return module.exports.renderWithParams(req, res, "Victim's Diarie", "clues/diarie", { key: req.params.key });
+    },
+
+    // send the victim phone
+    sendPhone: function (req, res) {
+        return module.exports.renderWithParams(req, res, "Victim's Phone", "clues/phone", { key: req.params.key });
+    },
+
+    // check if PIN is valid
+    checkPIN: function (req, res) {
+        // sanitize the pin
+        req.body.pin = req.sanitize(req.body.pin);
+        if (req.body.pin == phonePIN) {
+            return res.json({ success: true });
+        } else {
+            return res.json({ success: false, error: "Incorrect PIN" });
+        }
     }
 }
